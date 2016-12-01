@@ -6,8 +6,7 @@ title: 'Amazon Patents'
 <h1>Amazon Patents</h1>
 <p>As I was doing my regular work on patents and APIs I wanted to set aside all of the patents from Amazon I've been reading.</p>
 {% for patent in site.data.patents %}
-  <h2>{{ patent.name }}</h2>
-  <p><a href="{{ patent.url }}" target="_blank" title="View on USPTO Website"><img style="padding: 5px;" src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/uspto.png" width="150" align="right" /></a></p>
+  <h2><a href="{{ patent.url }}">{{ patent.name }}</a></h2>
   <p>
     <strong>Owner:</strong> <i>{{ patent.owner }}</i><br />
     <strong>Publication #:</strong> <i>{{ patent.publication_number }}</i><br />
