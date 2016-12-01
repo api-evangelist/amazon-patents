@@ -11,8 +11,9 @@ title: 'Amazon Patents'
     <strong>Owner:</strong> <i>{{ patent.owner }}</i><br />
     <strong>Publication #:</strong> <i>{{ patent.publication_number }}</i><br />
     <strong>Publication Date:</strong> <i>{{ patent.publication_date }}</i>
+    <strong>Patent URL:</strong><i><a href="{{ patent.url }}">View on USPTO Website</a></i>
   </p>
   <p>{{ patent.abstract }}</p>
-  <p align="center"><hr /></p>
+  <p align="center"><hr style="padding: 1px;" /></p>
 {% endfor %}
 <p>{{ site.patent_footer }}</p>
